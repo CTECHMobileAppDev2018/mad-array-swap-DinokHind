@@ -17,9 +17,11 @@ class ArraySwapper {
     
     // Swap the two items in "inputArray" and return the output
     // Remember to make sure that loc1 and loc2 are valid positions in the array!
-    int temp = inputArray[loc1];
-    inputArray[loc1] = inputArray[loc2];
-    inputArray[loc2] = temp;
+    if (loc1 >= 0 && loc2 >= 0 && loc1 < inputArray.length && loc2 < inputArray.length){
+      int temp = inputArray[loc1];
+      inputArray[loc1] = inputArray[loc2];
+      inputArray[loc2] = temp;
+    }
   }
 
   
